@@ -6,24 +6,27 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
+<section class="everything">
+    <header>
+    <section id="pfp">
+        <img src="prof.jpg" id="pfp1">
+        <h2>Karthi</h2>
+    </section>
+
+    </header>
+    
     <h1>To-do list</h1>
     <section class="input">
         <input type ="text" id="addtask" placeholder="Enter task here">
         <button id="addtaskbtn">Add task</button>
     </section>
-    <div id="tasks">
-        <ol>
-        </ol>
+    <div id = 'tasks'>
+        <ul id="eachtask">
+        </ul>
         
     </div>
-    <!-- <section class="calculator">
-        <h3>Sum Calculator</h3>
-        <input type="number" id="a" placeholder="Enter A">
-        <input type="number" id="b" placeholder="Enter B">
-        <button id="calcBtn">Calculate Sum</button>
-        <div id="sumOutput"></div>
-    </section> -->
+</section>
     <script src="script.js"></script>
 </body>
 </html>

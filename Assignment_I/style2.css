@@ -1,0 +1,79 @@
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    gap: 30px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4b2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input {
+    width: 90;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid aliceblue;
+    outline: none;
+    background-color: aliceblue;
+    box-sizing: border-box;  /* prevents overflow */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;      /* container + list side by side */
+    align-items: flex-start;  /* align to top */
+    gap: 40px;                /* space between the two sections */
+}
+li {
+    list-style: none;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;             /* ✅ fixed space between all three parts */
+}
+
+/* Checkbox */
+li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;        /* stops it from squishing */
+    cursor: pointer;
+}
+
+/* Task text */
+li span {
+    flex: 1;               /* ✅ takes up remaining space, pushes button to the end */
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Delete button */
+li button {
+    flex-shrink: 0;        /* stops it from squishing */
+    width: 70px;
+    height: 30px;
+    padding: 0;
+    font-size: 13px;
+    background-color: red;
+    border-radius: 6px;
+    
+}

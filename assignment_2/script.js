@@ -1,24 +1,34 @@
-function addTask() {
-    let input = document.getElementById("taskInput");
-    let taskText = input.value;
-
-    if (taskText === "") return;
-
-    let li = document.createElement("li");
-    li.innerText = taskText;
-
-    // Delete button
-    let deleteBtn = document.createElement("button");
-    deleteBtn.innerText = "X";
-    deleteBtn.className = "delete-btn";
-
-    deleteBtn.onclick = function () {
-        li.remove();
-    };
-
-    li.appendChild(deleteBtn);
-
-    document.getElementById("taskList").appendChild(li);
-
-    input.value = "";
+let btn = document.querySelector('button');
+btn.addEventListener('click' , ()=>{
+    create();
+})
+let labe = document.querySelector('#label');
+let checkk = document.querySelector('#tick')
+checkk.addEventListener('change', (e) => {
+        setTimeout(()=>{
+            if(e.target.checked){
+            labe.remove();
+        }
+        } , 100)
+});
+let lists = document.querySelector('#inputs');
+function create(){
+    let lab = document.createElement("label");
+    lab.classList.add('.container');
+    let inp = document.createElement('input');
+    inp.id = 'tasktext';
+    inp.placeholder = "Add Task"
+    let check = document.createElement('input')
+    check.type = 'checkbox';
+    check.id = 'tick'
+    lab.appendChild(inp)
+    lab.appendChild(check)
+    lists.appendChild(lab);
+    check.addEventListener('change', (e) => {
+        setTimeout(()=>{
+            if(e.target.checked){
+            lab.remove();
+        }
+        } , 100)
+});
 }

@@ -1,0 +1,100 @@
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background : linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+
+/* Header */
+div:first-child {
+    margin-top: 20px;
+}
+
+
+img {
+    border-radius: 50%;
+}
+
+
+/* Title */
+h1 {
+    margin: 10px 0;
+}
+
+
+/* Input section */
+input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff7a18;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+button:hover {
+    background-color: #ff4b2b;
+}
+
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+/* Each task */
+li {
+    background: white;
+    color: black;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Delete button inside task */
+li button {
+    background-color: red;
+    padding: 5px 8px;
+}
+
+
+li button:hover {
+    background-color: darkred;
+}
+
+
+/* About section */
+h3 {
+    margin-top: 30px;
+}
+
+
+/* Tags */
+span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+}

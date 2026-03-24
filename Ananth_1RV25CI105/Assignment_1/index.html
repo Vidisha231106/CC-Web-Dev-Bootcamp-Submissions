@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>My Lists</h2>
+        <ul>
+            <li>All Tasks</li>
+            <li>Work</li>
+            <li>Personal</li>
+            <li>Study</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="profile">
+            <img src="avatar.png" class="avatar">
+            <div>
+                <h2>Hi Ananth!</h2>
+            </div>
+        </div>
+
+        <h1>My Tasks</h1>
+
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Enter task">
+
+            <input type="date" id="due-date">
+            <input type="time" id="due-time">
+
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <select id="category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Study">Study</option>
+            </select>
+
+            <button id="add-btn">Add</button>
+        </div>
+
+        <div id="task-list"></div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

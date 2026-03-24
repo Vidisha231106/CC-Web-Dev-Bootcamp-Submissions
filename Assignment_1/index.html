@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to do list</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Tektur:wght@400..900&display=swap');
+    </style>
 </head>
+
 <body>
-
-    <div class="app-container">
-        
-        <header class="profile-section">
-            <div class="avatar-circle">
-                <span>AS</span> 
-            </div>
-            <h1 class="user-name">Sai Pranavi</h1>
-            <p class="user-bio">Engineering student | Nature Photographer | Problem Solver</p>
-        </header>
-
-        <hr> <section class="app-info">
-            <details>
-                <summary>How to use this app</summary>
-                <p>Type your task in the box below and click "Add". Use the delete button to remove completed items.</p>
-            </details>
-        </section>
-
-        <main class="todo-main">
-            <div class="input-group">
-                <input type="text" id="taskInput" placeholder="Enter a new task...">
-                <button id="addBtn">Add Task</button>
-            </div>
-
-            <ul id="taskList">
-                </ul>
-        </main>
-
-        <footer class="app-footer">
-            <small>&copy; 2026 Built with HTML, CSS, and JS</small>
-        </footer>
-
+    <div id="main">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/au_homepage_frozen2_elsa_hero_m_34bce5a8.jpeg?region=0,0,750,668"
+            alt="" id="image">
+        <h2 id="name">Nikhitha Pabbisetty</h2>
+        <h4 id="bio">1st Year Student of CSE Department, RVCE.</h4>
+        <div id="add">
+            <h4>ADD TASK</h4>
+            <button id="plus"><img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/070/915/066/small/white-3d-plus-sign-isolated-on-transparent-background-png.png"
+                    alt="" id="plusimg"></button>
+        </div>
+        <div id="inputs"></div>
+        <label class="container" id="label">
+            <input type="text" name="" id="tasktext" placeholder="Add Task">
+            <input type="checkbox" id="tick">
+        </label>
     </div>
-
-    <script src="script.js"></script>
+    <script src="work.js"></script>
 </body>
+
 </html>

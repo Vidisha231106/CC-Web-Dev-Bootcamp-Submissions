@@ -1,0 +1,63 @@
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    gap: 30px;
+}
+
+/* ✅ Login container - single column */
+.container {
+    width: 450px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;   /* stacks everything vertically */
+    align-items: center;
+    background-color: #ff7a18;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.container:hover {
+    transform: translateY(-2.99px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.379);
+}
+/* ✅ Inputs inside container */
+.container input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    box-sizing: border-box;  /* prevents overflow */
+}
+
+/* ✅ Single button block (removed the duplicate) */
+.container button {
+    width: 150px;
+    height: 40px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4b2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    background-color: #cc3a20;
+}
+
+/* Heading */
+h1 {
+    color: white;
+    margin: 0;
+}
+

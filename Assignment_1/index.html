@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header class="profile-section">
+            <div class="avatar-circle">
+                <span>AS</span> 
+            </div>
+            <h1 class="user-name">Sai Pranavi</h1>
+            <p class="user-bio">Engineering student | Nature Photographer | Problem Solver</p>
+        </header>
+
+        <hr> <section class="app-info">
+            <details>
+                <summary>How to use this app</summary>
+                <p>Type your task in the box below and click "Add". Use the delete button to remove completed items.</p>
+            </details>
+        </section>
+
+        <main class="todo-main">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Enter a new task...">
+                <button id="addBtn">Add Task</button>
+            </div>
+
+            <ul id="taskList">
+                </ul>
+        </main>
+
+        <footer class="app-footer">
+            <small>&copy; 2026 Built with HTML, CSS, and JS</small>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

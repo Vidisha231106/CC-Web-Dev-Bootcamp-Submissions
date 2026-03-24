@@ -1,0 +1,89 @@
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShs2EJPi2NqWtNsdzYqOgj2GQCerlwpSJ06A&s");
+  
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.75;  
+  z-index: -1;
+}
+
+
+body::before {
+  filter: blur(2px);
+}
+
+
+
+h1 {
+  color: #000000;
+}
+
+.profile {
+  margin: 10px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.todo-input {
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  border: none;
+}
+
+ul {
+  list-style-type: disc; 
+  padding-left: 20px;
+}
+
+li {
+  background: white;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-position: inside;
+}
